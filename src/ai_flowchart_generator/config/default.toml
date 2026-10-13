@@ -1,0 +1,31 @@
+# ai-flowchart-generator default config. Copied from here on first run.
+# Override per-project with ./config/config.toml or --config <path>.
+
+[llm]
+backend = "mock"          # mock | openai | anthropic | local
+model = "gpt-4o-mini"
+api_key_env = "AIFLOW_API_KEY"
+timeout_s = 30.0
+temperature = 0.2
+
+[extract]
+mode = "hybrid"           # rules | llm | hybrid
+chunk_lines = 400
+max_depth = 12
+
+[normalize]
+collapse_duplicate_labels = true
+drop_dangling_edges = true
+autolink_orphans = false
+max_label_len = 64
+
+[render]
+theme = "default"
+direction = "TD"
+allow_inline_scripts = false
+font_family = "Inter"
+
+[pipeline]
+max_nodes = 5000
+max_edges = 20000
+cache_dir = ".ai_flowchart_cache"
