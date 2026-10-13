@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+ENV/
+
+# Flowchart render cache (SVG/PNG exports are build artifacts)
+.ai_flowchart_cache/
+exports/
+renders/
+*.gv
+*.dot.svg
+
+# Local model weights & embeddings cache
+models/cache/
+*.onnx
+*.safetensors
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.vscode/*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+*.env.local
+config/secrets.toml
+
+# Logs / profile dumps
+*.log
+logs/
+profiling/
+*.pstats
